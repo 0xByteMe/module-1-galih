@@ -27,8 +27,26 @@
     <div class="video-overlay"></div>
 
     <main>
-        <p>Hello Gaes!</p>
+        <form action="#" method="POST">
+
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name"><br>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" cols="50"
+                placeholder="Write your message here..."></textarea><br>
+            <label>Are you a Swiftie?</label>
+            <div class="checkbox-group">
+                <input type="checkbox" value="yes">
+                <label for="swiftie-yes">Yes</label>
+
+                <input type="checkbox" value="no">
+                <label for="swiftie-no">No</label>
+            </div><br>
+            <input type="submit" value="Submit">
+        </form>
     </main>
+
     <img src="assets/picture/Chat Box AI.jpg" alt="Chat Box AI" class="chat-box">
     <video src="assets/video/MbakTaylor.mp4" autoplay muted loop id="background-video"></video>
     <footer>© 2024 Mbak Taylor Never Die. All rights reserved.</footer>
