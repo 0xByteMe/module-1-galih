@@ -13,6 +13,17 @@ h1 {
     font-size: 3rem;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.title-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1:hover {
+    color: #e5c92b;
+    transform: scale(1.005);
 }
 
 /* Styling untuk video background */
@@ -88,7 +99,7 @@ form label {
 
 form input[type="text"],
 form textarea {
-    width: 100%;
+    width: 96%;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
@@ -118,12 +129,13 @@ form input[type="submit"]:hover {
 /* Chat box styling */
 .chat-box {
     position: fixed;
-    bottom: 40px;
+    bottom: 50px;
     right: 20px;
     width: 60px;
     height: 60px;
     cursor: pointer;
     transition: transform 0.3s ease;
+    z-index: 1000;
 }
 
 .chat-box:hover {
@@ -139,6 +151,7 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+    z-index: 1001;
 }
 
 .checkbox-group {
