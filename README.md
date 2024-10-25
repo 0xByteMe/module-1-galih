@@ -2,7 +2,7 @@
 
 ## Deskripsi Proyek
 
-Proyek ini adalah sebuah website fan base untuk Mbak Taylor yang menyajikan informasi, galeri, dan forum interaksi untuk penggemar. Dengan desain yang responsif dan video latar belakang yang menarik, website ini bertujuan untuk menciptakan pengalaman yang menyenangkan bagi pengunjung.
+Proyek ini adalah sebuah website fan base untuk Mbak Taylor yang menyajikan informasi, galeri, dan forum interaksi untuk penggemar.
 
 ## Fitur Utama
 
