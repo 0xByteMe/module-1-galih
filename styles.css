@@ -70,28 +70,41 @@ header, main, footer {
 }
 
 /* Navbar styling */
+.navbar {
+    position: sticky; /* Ganti ke sticky */
+    top: 0; 
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 15px 0; /* Padding untuk menambah ruang di navbar */
+    z-index: 1000; 
+}
+
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.7); /* Transparan */
-    padding: 15px 0;
+    justify-content: center; 
 }
 
 nav ul li {
-    margin: 0 20px;
+    margin: 0 10px;
 }
 
 nav ul li a {
-    color: white;
+    color: white; 
     text-decoration: none;
     font-size: 1.2rem;
+    padding: 10px;
 }
 
 nav ul li a:hover {
     text-decoration: underline;
+    color: #e5c92b;
+}
+
+header {
+    margin: 0; 
+    padding: 0;
 }
 
 /* Form styling */
@@ -162,7 +175,7 @@ footer {
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
-    position: fixed;
+    position: relative;
     width: 100%;
     bottom: 0;
     z-index: 1001;
@@ -184,99 +197,69 @@ footer {
         font-size: 1rem;
     }
 
-    nav ul li a {
-        font-size: 1rem;
-    }
-
-    form {
-        padding: 15px;
-    }
-
     .chat-box {
         width: 50px;
         height: 50px;
     }
 }
 
-/* Media query untuk layar berukuran kecil (ponsel) */
+/* Media query untuk layar berukuran kecil (smartphone) */
 @media (max-width: 480px) {
     h1 {
         font-size: 2rem;
-        margin-top: 2px;
     }
 
     .description {
         font-size: 0.9rem;
     }
 
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    nav ul li a {
-        font-size: 0.9rem;
-    }
-
-    form {
-        padding: 10px;
-        margin: 20px;
-    }
-
     .chat-box {
         width: 40px;
         height: 40px;
     }
+}
 
-    footer {
-        font-size: 0.8rem;
+/* Galeri Utama */
+.gallery {
+    max-width: 1200px; /* Mengatur lebar maksimum galeri */
+    margin: 20px auto; /* Memusatkan galeri di tengah */
+    padding: 20px;
+    text-align: center; /* Menempatkan teks di tengah */
+}
+
+.gallery-container {
+    display: flex; /* Menyusun elemen galeri dalam satu baris */
+    flex-wrap: wrap; /* Membungkus elemen galeri ke baris berikutnya */
+    justify-content: center; /* Memusatkan elemen galeri secara horizontal */
+}
+
+.gallery-item {
+    flex: 0 1 calc(33.333% - 20px); /* Mengatur lebar item galeri */
+    margin: 10px; /* Menambahkan margin di sekitar setiap item */
+    overflow: hidden; /* Membatasi gambar yang di-zoom agar tidak melampaui batas container */
+    border-radius: 8px; /* Menambahkan sudut melengkung pada gambar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan */
+}
+
+.gallery-item img {
+    width: 100%; /* Membuat gambar memenuhi wadah */
+    height: auto; /* Menjaga rasio aspek gambar */
+    transition: transform 0.3s ease; /* Menambahkan transisi untuk efek zoom */
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1); /* Memperbesar gambar saat di-hover */
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .gallery-item {
+        flex: 0 1 calc(50% - 20px); /* 2 gambar per baris pada layar lebih kecil */
     }
 }
-/* Navbar styling */
-.navbar {
-    position: sticky;
-    top: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 15px 0;
-    text-align: center;
-    width: 100%;
-    z-index: 1000;
-}
 
-.navbar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column; /* Default untuk layar kecil */
-    align-items: center;
-}
-
-.navbar ul li {
-    margin: 5px 0;
-}
-
-.navbar ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-}
-
-/* Hover effect */
-.navbar ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Media query untuk layar lebih besar */
-@media (min-width: 600px) {
-    .navbar ul {
-        flex-direction: row; /* Tampilkan secara horizontal di layar besar */
-    }
-
-    .navbar ul li {
-        margin: 0 20px; /* Jarak antar item di layar besar */
+@media (max-width: 480px) {
+    .gallery-item {
+        flex: 0 1 100%; /* 1 gambar per baris pada layar sangat kecil */
     }
 }
