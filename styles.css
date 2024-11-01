@@ -9,7 +9,7 @@ body {
 h1 {
     font-family: 'Rock Salt', cursive;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 5px;
     font-size: 3rem;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
@@ -24,6 +24,20 @@ h1 {
 h1:hover {
     color: #e5c92b;
     transform: scale(1.005);
+}
+
+.description-container {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.description {
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-align: center;
+    margin-top: -2em;
 }
 
 /* Styling untuk video background */
@@ -154,8 +168,115 @@ footer {
     z-index: 1001;
 }
 
-.checkbox-group {
+.radio-group {
     display: flex;
     gap: 10px; 
     align-items: center;
+}
+
+/* Media query untuk layar berukuran sedang (tablet) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    .chat-box {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* Media query untuk layar berukuran kecil (ponsel) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+        margin-top: 2px;
+    }
+
+    .description {
+        font-size: 0.9rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem;
+    }
+
+    form {
+        padding: 10px;
+        margin: 20px;
+    }
+
+    .chat-box {
+        width: 40px;
+        height: 40px;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
+/* Navbar styling */
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Default untuk layar kecil */
+    align-items: center;
+}
+
+.navbar ul li {
+    margin: 5px 0;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* Hover effect */
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Media query untuk layar lebih besar */
+@media (min-width: 600px) {
+    .navbar ul {
+        flex-direction: row; /* Tampilkan secara horizontal di layar besar */
+    }
+
+    .navbar ul li {
+        margin: 0 20px; /* Jarak antar item di layar besar */
+    }
 }

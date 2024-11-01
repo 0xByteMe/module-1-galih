@@ -10,9 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<br>
     <header>
-        <nav>
+        <nav class="navbar">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
@@ -21,6 +21,10 @@
             </ul>
         </nav>
         <h1><a href="#" class="title-link">Mbak Taylor Fan Base</a></h1>
+        <div class="description-container">
+            <p class="description">Website ini dibuat bertujuan untuk menyatukan penggemar Taylor Swift diseluruh
+                Indonesia, agar tidak mudah galau akibat diputusin pacarnya!</p>
+        </div>
     </header>
 
     <!-- Overlay untuk efek blur dan hitam -->
@@ -28,19 +32,17 @@
 
     <main>
         <form action="#" method="POST">
-
             <label for="name">Your Name:</label>
             <input type="text" id="name" name="name" placeholder="Enter your name"><br>
-
             <label for="message">Message:</label>
             <textarea id="message" name="message" rows="4" cols="50"
                 placeholder="Write your message here..."></textarea><br>
             <label>Are you a Swiftie?</label>
-            <div class="checkbox-group">
-                <input type="checkbox" value="yes">
+            <div class="radio-group">
+                <input type="radio" id="swiftie-yes" name="swiftie" value="yes">
                 <label for="swiftie-yes">Yes</label>
-
-                <input type="checkbox" value="no">
+                
+                <input type="radio" id="swiftie-no" name="swiftie" value="no">
                 <label for="swiftie-no">No</label>
             </div><br>
             <input type="submit" value="Submit">
@@ -49,7 +51,7 @@
 
     <img src="assets/picture/Chat Box AI.jpg" alt="Chat Box AI" class="chat-box">
     <video src="assets/video/MbakTaylor.mp4" autoplay muted loop id="background-video"></video>
-    <audio src="assets/audio/ATW.mp3" autoplay loop></audio>
+    <audio src="assets/audio/ATW.mp3" autoplay loop muted></audio>
     <footer>© 2024 Mbak Taylor Never Die. All rights reserved.</footer>
 </body>
 
