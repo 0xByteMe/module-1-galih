@@ -153,6 +153,22 @@ form input[type="submit"]:hover {
     background-color: #45a049;
 }
 
+/* Styling Gallery content */
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2.5rem;
+    color: #e5c92b;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Efek bayangan */
+    transition: color 0.3s ease, transform 0.2s ease; /* Animasi */
+}
+
+h2:hover {
+    color: #ffdd57;
+    transform: scale(1.05); /* Efek zoom saat di-hover */
+}
+
 /* Chat box styling */
 .chat-box {
     position: fixed;
@@ -187,7 +203,7 @@ footer {
     align-items: center;
 }
 
-/* Media query untuk layar berukuran sedang (tablet) */
+/*tablet */
 @media (max-width: 768px) {
     h1 {
         font-size: 2.5rem;
@@ -203,7 +219,7 @@ footer {
     }
 }
 
-/* Media query untuk layar berukuran kecil (smartphone) */
+/*smartphone */
 @media (max-width: 480px) {
     h1 {
         font-size: 2rem;
@@ -221,45 +237,45 @@ footer {
 
 /* Galeri Utama */
 .gallery {
-    max-width: 1200px; /* Mengatur lebar maksimum galeri */
-    margin: 20px auto; /* Memusatkan galeri di tengah */
+    max-width: 1200px; 
+    margin: 20px auto;
     padding: 20px;
-    text-align: center; /* Menempatkan teks di tengah */
+    text-align: center;
 }
 
 .gallery-container {
-    display: flex; /* Menyusun elemen galeri dalam satu baris */
-    flex-wrap: wrap; /* Membungkus elemen galeri ke baris berikutnya */
-    justify-content: center; /* Memusatkan elemen galeri secara horizontal */
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .gallery-item {
-    flex: 0 1 calc(33.333% - 20px); /* Mengatur lebar item galeri */
-    margin: 10px; /* Menambahkan margin di sekitar setiap item */
-    overflow: hidden; /* Membatasi gambar yang di-zoom agar tidak melampaui batas container */
+    flex: 0 1 calc(33.333% - 20px); 
+    margin: 10px;
+    overflow: hidden; /*di-zoom agar tidak melampaui batas container */
     border-radius: 8px; /* Menambahkan sudut melengkung pada gambar */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
 }
 
 .gallery-item img {
-    width: 100%; /* Membuat gambar memenuhi wadah */
-    height: auto; /* Menjaga rasio aspek gambar */
-    transition: transform 0.3s ease; /* Menambahkan transisi untuk efek zoom */
+    width: 100%; 
+    height: auto; 
+    transition: transform 0.3s ease;
 }
 
 .gallery-item img:hover {
-    transform: scale(1.1); /* Memperbesar gambar saat di-hover */
+    transform: scale(1.1); 
 }
 
 /* Responsif */
 @media (max-width: 768px) {
     .gallery-item {
-        flex: 0 1 calc(50% - 20px); /* 2 gambar per baris pada layar lebih kecil */
+        flex: 0 1 calc(50% - 20px); 
     }
 }
 
 @media (max-width: 480px) {
     .gallery-item {
-        flex: 0 1 100%; /* 1 gambar per baris pada layar sangat kecil */
+        flex: 0 1 100%; 
     }
 }

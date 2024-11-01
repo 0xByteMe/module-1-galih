@@ -1,11 +1,31 @@
 # Mbak Taylor Never Die
 
-![Taylor Swift](assets/picture/NEVERDIE.jpeg)
-
-Website ini dibuat untuk bertujuan menjadikan penggemar Taylor Swift dapat bersatu di Indonesia.
+Website ini dibuat untuk menyatukan penggemar Taylor Swift di Indonesia, dengan tujuan memberikan ruang bagi Swifties Indonesia agar bisa berkumpul dan berinteraksi secara virtual.
 
 ## Fitur Utama
+- **Video Background**: Halaman menggunakan video sebagai latar belakang untuk memberikan pengalaman visual yang menarik.
+- **Overlay Blur Effect**: Efek overlay dengan blur dan sedikit transparansi agar teks lebih mudah dibaca di atas video.
+- **Responsive Navbar**: Navbar tetap terlihat di atas halaman saat pengguna scroll, dengan sedikit transparansi.
+- **Gallery**: Menampilkan beberapa gambar album Taylor Swift dalam layout grid yang responsif.
+- **Chat Box AI**: Simbol chat box yang bisa digunakan untuk fitur tambahan di masa depan.
+- **Formulir Kontak**: Pengguna dapat mengisi nama, pesan, dan menjawab apakah mereka adalah penggemar Taylor Swift.
 
-- Fitur 1: Background video Taylor Swift Concert yang penuh gairah.
-- Fitur 2: Website ini dilengkapi oleh lagu Taylor Swift agar penggemar tidak galau ketika mendengar lagu ini.
-- Fitur 3: Dilengkapi dengan pendaftaran untuk menjadi Swiftie.
+## Teknologi yang Digunakan
+- **HTML5**: Struktur dasar dari website.
+- **CSS3**: Styling responsif dan efek animasi untuk elemen-elemen pada halaman.
+- **JavaScript**: Untuk interaksi dasar jika diperlukan (misal: validasi form di masa mendatang).
+- **Google Fonts**: Menggunakan font eksternal untuk menambah kesan estetika pada teks.
+- **Media Queries**: Membuat tampilan halaman tetap optimal di berbagai ukuran layar (desktop, tablet, smartphone).
+
+## Struktur Proyek
+- `index.html` - File utama untuk struktur halaman.
+- `styles.css` - File CSS untuk semua styling pada halaman.
+- `assets/` - Folder yang berisi semua aset seperti gambar, video, dan audio.
+  - `assets/picture/` - Gambar-gambar galeri dan ikon.
+  - `assets/video/` - Video background untuk halaman utama.
+  - `assets/audio/` - Musik latar (Autoplay dimatikan agar tidak mengganggu).
+
+## Cara Menjalankan
+1. Clone repositori ini:
+   ```bash
+   git clone <URL_REPO>
