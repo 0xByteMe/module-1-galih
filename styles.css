@@ -6,6 +6,12 @@ body {
     box-sizing: border-box;
 }
 
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+
 h1 {
     font-family: 'Rock Salt', cursive;
     text-align: center;
@@ -15,6 +21,7 @@ h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     transition: transform 0.2s ease, color 0.2s ease;
 }
+
 
 .title-link {
     text-decoration: none;
@@ -64,18 +71,16 @@ h1:hover {
     z-index: 1;
 }
 
-header, main, footer {
+main, footer {
     position: relative;
-    z-index: 1000; 
+    z-index: 5; 
 }
 
 /* Navbar styling */
 .navbar {
-    position: sticky; /* Ganti ke sticky */
     top: 0; 
     background-color: rgba(0, 0, 0, 0.7); 
     padding: 15px 0; /* Padding untuk menambah ruang di navbar */
-    z-index: 1000; 
 }
 
 nav ul {
