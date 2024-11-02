@@ -22,9 +22,12 @@ Website ini dibuat untuk menyatukan penggemar Taylor Swift di Indonesia, dengan 
 - `assets/` - Folder yang berisi semua aset seperti gambar, video, dan audio.
   - `assets/picture/` - Gambar-gambar galeri dan ikon.
   - `assets/video/` - Video background untuk halaman utama.
-  - `assets/audio/` - Musik latar (Autoplay dimatikan agar tidak mengganggu).
+  - `assets/audio/` - Musik latar.
 
 ## Cara Menjalankan
 1. Clone repositori ini:
    ```bash
    git clone <URL_REPO>
+
+## Link Demo
+https://0xbyteme.github.io/module-1-galih/
