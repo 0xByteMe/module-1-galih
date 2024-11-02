@@ -13,7 +13,6 @@ Website ini dibuat untuk menyatukan penggemar Taylor Swift di Indonesia, dengan 
 ## Teknologi yang Digunakan
 - **HTML5**: Struktur dasar dari website.
 - **CSS3**: Styling responsif dan efek animasi untuk elemen-elemen pada halaman.
-- **JavaScript**: Untuk interaksi dasar jika diperlukan (misal: validasi form di masa mendatang).
 - **Google Fonts**: Menggunakan font eksternal untuk menambah kesan estetika pada teks.
 - **Media Queries**: Membuat tampilan halaman tetap optimal di berbagai ukuran layar (desktop, tablet, smartphone).
 
